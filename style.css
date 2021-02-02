@@ -1,0 +1,220 @@
+@import url("http://fonts.cdnfonts.com/css/whitney-2");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Whitney", sans-serif;
+}
+
+body {
+	background-color: #36393f;
+}
+
+.link {
+	color: #00b0f4;
+	cursor: pointer;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.message {
+	width: 60vw;
+	height: 80vh;
+}
+
+.name-box {
+	display: flex;
+}
+
+.profile-picture {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.name {
+	color: #ffffff;
+	font-weight: normal;
+	margin-top: 1px;
+	margin-left: 1rem;
+	font-size: 1.2rem;
+}
+
+.bot-tag {
+	position: relative;
+	background-color: #7289da;
+	height: min-content;
+	padding: 0.17rem;
+	border-radius: 4px;
+	font-size: 0.7rem;
+	color: white;
+	top: 4px;
+	left: 4px;
+}
+
+.date {
+	color: #99aab5;
+	font-size: 0.8rem;
+	margin-top: 6px;
+	margin-left: 13px;
+}
+
+.content-box {
+	position: relative;
+	top: -25px;
+	left: 66.5px;
+}
+
+.content {
+	font-weight: lighter;
+}
+
+.embed-box {
+	background-color: #2f3136;
+	margin-top: 10px;
+	max-width: 500px;
+	height: 627px;
+	border-left: 5px solid #46d0e6;
+	border-radius: 4px;
+}
+
+.author {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 6px;
+	color: #ffffff;
+}
+
+.author-picture {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+}
+
+.author-name {
+	color: #ffffff;
+	font-weight: normal;
+	top: -26px;
+	left: 35px;
+	font-size: 1rem;
+	position: relative;
+	width: min-content;
+	margin-right: 0;
+}
+
+.author-name.link:hover {
+	text-decoration: underline;
+}
+
+.thumbnail-picture {
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	position: absolute;
+	left: 385px;
+	top: 40px;
+}
+
+.title {
+	position: relative;
+	font-weight: lighter;
+	top: 40px;
+	left: 10px;
+}
+
+.description {
+	position: relative;
+	top: 45px;
+	left: 10px;
+	color: hsla(0, 0%, 100%, 0.6);
+	font-size: 14px;
+	font-weight: 500;
+	max-width: 360px;
+}
+
+.code {
+	font-style: normal;
+	background-color: #2e3136;
+	border: solid 2px #202225;
+	padding: 10px;
+	border-radius: 5px;
+	top: 55px;
+	position: relative;
+	width: 360px;
+	color: #839496;
+	font-size: 14px;
+	left: 10px;
+}
+
+.fields {
+	position: relative;
+	top: 60px;
+	display: block;
+}
+
+.field {
+	left: 10px;
+	position: relative;
+	width: 360px;
+	margin-bottom: 15px;
+}
+
+.field.inline {
+	width: 200px;
+}
+
+.inline-box {
+	display: flex;
+}
+
+.field-title {
+	color: #ffffff;
+	font-size: 1rem;
+	position: relative;
+}
+
+.field-content {
+	color: hsla(0, 0%, 100%, 0.6);
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.image-picture {
+	position: relative;
+	top: 60px;
+	left: 10px;
+	border-radius: 7px;
+}
+
+.footer {
+	width: 360px;
+	position: relative;
+	top: 67px;
+	left: 10px;
+	height: 34px;
+	display: block;
+}
+
+.footer-picture {
+	border-radius: 3px;
+	width: 25px;
+}
+
+.footer-text {
+	position: relative;
+	width: 323px;
+	left: 30px;
+	top: -24px;
+	font-size: 14px;
+	color: hsla(0, 0%, 100%, 0.6);
+}
