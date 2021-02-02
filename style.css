@@ -1,19 +1,22 @@
-@import url("http://fonts.cdnfonts.com/css/whitney-2");
-
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	font-family: "Whitney", sans-serif;
+	font-family: "Whitney Light", sans-serif;
 }
 
 body {
 	background-color: #36393f;
 }
 
+.screen-size-error-container,
+.screen-size-error {
+	display: none;
+}
+
 .link {
 	color: #00b0f4;
 	cursor: pointer;
+	font-family: "Whitney";
 }
 
 .link:hover {
@@ -28,8 +31,8 @@ body {
 }
 
 .message {
-	width: 60vw;
-	height: 80vh;
+	width: fit-content;
+	height: fit-content;
 }
 
 .name-box {
@@ -47,7 +50,8 @@ body {
 	font-weight: normal;
 	margin-top: 1px;
 	margin-left: 1rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+	font-family: "Whitney";
 }
 
 .bot-tag {
@@ -63,10 +67,12 @@ body {
 }
 
 .date {
-	color: #99aab5;
+	color: hsla(0, 0%, 100%, 0.6);
 	font-size: 0.8rem;
 	margin-top: 6px;
 	margin-left: 13px;
+	font-weight: 500;
+	font-family: "Whitney";
 }
 
 .content-box {
@@ -76,13 +82,13 @@ body {
 }
 
 .content {
-	font-weight: lighter;
+	color: #dcddde;
 }
 
 .embed-box {
 	background-color: #2f3136;
 	margin-top: 10px;
-	max-width: 500px;
+	min-width: 500px;
 	height: 627px;
 	border-left: 5px solid #46d0e6;
 	border-radius: 4px;
@@ -112,16 +118,12 @@ body {
 	margin-right: 0;
 }
 
-.author-name.link:hover {
-	text-decoration: underline;
-}
-
 .thumbnail-picture {
 	width: 100px;
 	height: 100px;
 	border-radius: 5px;
 	position: absolute;
-	left: 385px;
+	left: 390px;
 	top: 40px;
 }
 
@@ -151,14 +153,15 @@ body {
 	top: 55px;
 	position: relative;
 	width: 360px;
-	color: #839496;
+	color: #dcddde;
 	font-size: 14px;
 	left: 10px;
+	font-family: Consolas, monaco, monospace;
 }
 
 .fields {
 	position: relative;
-	top: 60px;
+	top: 65px;
 	display: block;
 }
 
@@ -181,6 +184,7 @@ body {
 	color: #ffffff;
 	font-size: 1rem;
 	position: relative;
+	font-family: "Whitney";
 }
 
 .field-content {
@@ -217,4 +221,68 @@ body {
 	top: -24px;
 	font-size: 14px;
 	color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media only screen and (max-width: 700px) {
+	.message {
+		display: none;
+	}
+
+	.screen-size-error-container {
+		position: absolute;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.screen-size-error {
+		background-color: #36393f;
+		width: 50vw;
+		height: 50vh;
+		display: block;
+		box-shadow: #000000 0px 0px 30px 3px;
+		border-radius: 5px;
+		text-align: center;
+		color: #ffffff;
+		overflow-y: auto;
+		overflow-x: hidden;
+		max-height: 320px;
+	}
+
+	.screen-size-error h1 {
+		margin-top: 20px;
+		font-size: 4rem;
+	}
+
+	.screen-size-error .explanation {
+		margin-top: 40px;
+		width: 45vw;
+		margin: 20px auto;
+		font-size: 1.3rem;
+	}
+
+	.screen-size-error .come-back-later {
+		margin-bottom: 80px;
+		font-size: 1.3rem;
+		width: 45vw;
+		margin: 20px auto;
+	}
+}
+
+@font-face {
+	font-family: "Whitney";
+	src: url("./whitneymedium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Whitney Light";
+	src: url("./whitney-light.tff") format("tff");
+}
+
+@font-face {
+	font-family: "Consola";
+	src: url("./consola.tff") format("tff");
 }
